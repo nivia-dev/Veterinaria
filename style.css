@@ -1,0 +1,88 @@
+@charset "UTF8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(245, 215, 171, 0.945);
+   
+}
+
+.container {
+    background-image: linear-gradient(to bottom, rgb(241, 198, 132), rgb(245, 173, 64));
+    margin: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3rem;   
+}
+
+h1 {
+    padding: 1rem;
+    line-height: 4rem;
+}
+
+section {
+    line-height: 2rem;
+    font-size: 1.3rem;
+
+}
+
+img {
+    width: 35%;
+    float: left;
+    border-radius: 2rem;
+    padding-right: 1rem;
+}
+
+input#valor {
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 1.6rem;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.radio > label {
+    padding-right: 1.5rem;
+    padding-left: 0.2rem;
+}
+
+#convenio {
+    visibility: hidden;
+}
+
+#conv {
+    width: 12rem;
+    height: 1.6rem;
+    font-size: 1rem;
+}
+
+#botao {
+    width: 10rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    
+}
+
+#respostas {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+@media (min-width: 1020px) {
+    .container {
+        width: 70vw ;
+        margin: auto;
+        margin-top: 5rem;
+    }
+}

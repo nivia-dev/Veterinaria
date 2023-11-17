@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Veterinaria</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Veterinária Avenida</h1>
+        </header>
+        <main>
+            <section>
+                <img src="calculadora.jpg" alt="calculadora">
+            </section>
+            <section>
+                <div>
+                    <label for="valor">Valor da Vacina</label>
+                    <input type="text" name="valor" id="valor" >
+                </div>
+
+                    
+                    <div class="radio">
+                        Possui Convênio:
+                        
+                        <input type="radio" name="opcao" onclick="mostrarSelect()" id= "sim" value="S"><label for="sim">Sim</label>
+                        <input type="radio" name="opcao" id="nao" value="N"><label for="nao">Não</label>
+                    </div>
+                    <div id="convenio">
+                        <label for="conv">Convênio</label>
+                        <select name="plano" id="conv">
+                            <option value="" selected>--- Escolha ---</option>
+                            <option id="animal" value="AA">Amigo dos Animais</option>
+                            <option value="SA">Saúde Animal
+                            </option>
+                
+                        </select>
+                    </div>
+                
+                <button id= "botao" onclick="calcularDesconto()">Calcular Desconto</button>
+                <div id="respostas">
+                    <div id="desconto"></div>
+                    <div id="aPagar"></div>
+                </div>
+            </section>
+        
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
